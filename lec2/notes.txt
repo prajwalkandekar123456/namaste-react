@@ -1,0 +1,116 @@
+****** NPM *********
+--NPM is not stands for node package manager. It is the package manager which manages the packages.
+-- NPM is the repository tht contains some packages.
+
+******* Package.json *******
+The package.json file is a key part of any Node.js project, including React applications. It acts like a blueprint for your project, providing essential information about the app and helping manage dependencies and scripts. 
+
+******** Bundlers ***********
+--- A bundler in React is a tool that takes your JavaScript, CSS, HTML, and other assets, and combines (or "bundles") them into a few optimized files that can be efficiently loaded by a web browser.
+
+--- Why Bundlers are Important
+Combines Files: Bundlers take all your individual files and combine them into one or a few files, which reduces the number of HTTP requests the browser needs to make. This speeds up loading times.
+
+--- Handles Dependencies: They resolve dependencies between modules, so if one module requires another, the bundler makes sure they are included in the right order.
+
+--- Optimizes Code: Bundlers can also optimize your code by removing unused code (tree shaking), compressing files (minification), and making other optimizations to improve performance.
+
+--- Popular Bundlers
+--- Webpack: The most widely used bundler in the React ecosystem. It is highly configurable and can handle various types of assets with the help of loaders and plugins.\
+
+--- Parcel: A zero-config bundler that works out of the box, offering a simpler setup compared to Webpack.
+
+--- Rollup: Often used for bundling libraries because it generates smaller bundles and supports tree shaking out of the box.
+
+--- Example
+
+When you create a React app using Create React App (CRA), Webpack is used under the hood. Here's a simplified view of what happens:
+
+--- You write your code: You create components and styles in separate files.
+--- Webpack processes your code: Webpack takes all these files, processes them (like converting modern JavaScript or JSX into plain JavaScript), and bundles them together.
+--- Webpack outputs bundles: It outputs a few optimized files, typically one for JavaScript, one for CSS, etc.
+--- Browser loads the bundle: Your browser then loads these few files, rather than hundreds of individual modules.
+
+*** Two types  of dependencies are there ****
+
+** Dev Dependencies:
+
+-- Used only during development.
+-- Includes tools for testing, building, and linting.
+-- Examples: Jest, Webpack, ESLint.
+--Not required in production.
+
+** Normal Dependencies:
+
+-- Needed for the application to run in any environment, including production.
+-- Includes libraries and frameworks essential for functionality.
+-- Examples: Express, Mongoose, Axios.
+Required in both development and production.
+
+
+********** What is package.lock.json *********
+-- package-lock.json is a file used in Node.js projects to manage the dependencies of the project. Here's a simple explanation of its purpose and benefits:
+
+-- Consistency: It ensures that the exact same versions of dependencies are installed every time you (or anyone else) install the project, which helps avoid bugs related to version differences.
+
+-- Speed: It speeds up the installation process because it locks down the versions of dependencies, so npm doesn't need to resolve dependency versions each time you install.
+
+-- Security: It can help with security by locking dependencies to known good versions, avoiding updates that might introduce vulnerabilities.
+
+-- Predictability: It makes the project more predictable by specifying the exact tree of dependencies, so everyone working on the project has the same setup.
+
+***** npx parcel index.html *****
+npx means executing the package
+ 
+**** Parcel 🚀 ****
+Parcel is a popular web application bundler with several notable features that make it a strong choice for developers:
+
+1. **Zero Configuration**:
+   - Works out of the box with no configuration required.
+
+2. **Blazing Fast**:
+   - Uses multi-core compilation for faster builds.
+
+3. **HTML Entry Point**:
+   - Supports HTML files as entry points, automatically handling linked assets.
+
+4. **Hot Module Replacement (HMR)**:
+   - Instantly updates modules in the browser without a full reload.
+
+5. **Tree Shaking**:
+   - Automatically removes unused code to optimize bundle size.
+
+6. **Code Splitting**:
+   - Dynamically splits bundles to improve load times and performance.
+
+7. **CSS and JS Bundling**:
+   - Handles bundling of both CSS and JavaScript files, including support for SASS, LESS, and PostCSS.
+
+8. **TypeScript and JSX Support**:
+   - Built-in support for TypeScript and JSX out of the box.
+
+9. **Asset Management**:
+   - Manages static assets like images, fonts, and videos efficiently.
+
+10. **Plugin System**:
+    - Extensible through a robust plugin system for custom functionality.
+
+11. **Automatic Dependency Management**:
+    - Automatically installs and manages dependencies during development.
+
+12. **Development and Production Modes**:
+    - Optimizes code differently based on development or production environment.
+
+13. **Source Maps**:
+    - Generates source maps for easier debugging.
+
+14. **ES6+ and ES Module Support**:
+    - Full support for modern JavaScript features and ES modules.
+
+15. **Minification**:
+    - Automatically minifies code for production to reduce file size.
+
+16. **Environment Variables**:
+    - Easy handling of environment variables for different environments.
+
+These features collectively make Parcel a powerful and efficient tool for building modern web applications.

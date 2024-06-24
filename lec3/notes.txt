@@ -1,0 +1,54 @@
+***** What is JSX 🚀🚀****
+
+--- JSX is not the HTML
+--- JSX (JavaScript XML) is a syntax extension for JavaScript that allows you to write HTML-like code within JavaScript. It is used in React to describe what the user interface should look like.
+--- JSX tags produce React "elements". These elements are used by React to update the user interface efficiently.
+
+Certainly! Here are the points rewritten in a more structured format:
+
+1. **JSX**:
+   - This is not pure JavaScript.
+   - We can write any JS inside the JSX using curly braces{}s
+   
+2. **Parcel**:
+   - Parcel is the tool that handles the job of processing JSX.
+   
+3. **Transpilation**:
+   - This JSX code is transpiled before it reaches the JavaScript engine.
+   
+4. **Babel**:
+   - The Parcel package uses Babel to perform this transpilation. 🚀
+   - Babel is reading the code and convert into react.CreateElement.
+
+
+   **** 🚀🚀 Component in react 🚀🚀
+
+---Components are the building blocks of a React application. They allow you to split the UI into independent, reusable pieces that can be managed separately.
+
+Types of Components
+1) Functional Components:
+
+Definition: These are simple JavaScript functions that take props as an argument and return React elements (JSX).
+Usage: They are typically used for components that do not need to manage their own state.
+Example:
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+
+2) Class Components:
+
+Definition: These are ES6 classes that extend from React.Component and must include a render method that returns React elements.
+Usage: They are used when you need to manage state or lifecycle methods in your component.
+Example:
+
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}!</h1>;
+  }
+}
+
+
+
+*** Component Composition 🚀**
+The component inside the component is called as component composition
